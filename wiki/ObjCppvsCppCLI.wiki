@@ -60,7 +60,7 @@ public: // properties and methods
 == Class implementation in Objective-C++ ==
 
 {{{
-@implementation
+@implementation ClassName
 
 @synthesize x, y, width, height;
 
@@ -201,6 +201,7 @@ void Usage()
 
 - (void)usage
 {
+    // redraw all views
     [self onEachViewDoAction:^ (OpenGLSceneView *view) { [view setNeedsDisplay:YES]; }];
 }
 }}}
